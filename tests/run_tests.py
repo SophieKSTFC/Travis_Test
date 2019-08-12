@@ -1,7 +1,6 @@
 import unittest
 import sys
 
-#from tests.calculator_unittest import CalculatorUnitTests
 from calculator_unittest import CalculatorUnitTests
 
 def run_all_tests():
@@ -13,7 +12,7 @@ def run_all_tests():
 def main():
 
     success = run_all_tests()
-    sys.exit(0 if success else 1)
+    return 0 if success else 1
 
 if __name__ == "__main__":
     main()
