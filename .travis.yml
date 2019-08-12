@@ -6,3 +6,6 @@ python:
 script: 
   - cd tests/
   - python run_tests.py
+
+before_script:
+  - "flake8 ."
