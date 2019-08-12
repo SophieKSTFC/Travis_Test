@@ -3,4 +3,6 @@ language: python
 python:
   - "3.6"
 
-script: python tests/run_tests.py
+script: 
+  - cd tests/
+  - python run_tests.py
