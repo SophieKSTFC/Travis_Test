@@ -3,7 +3,7 @@ import xml.etree.cElementTree as ET
 
 def main():
 
-    
+    #traverse the test-reports and add in test/ to classname
     for xml_file in os.listdir("test-reports/"):
         et = ET.ElementTree(file="test-reports/{}".format(xml_file))
         root = et.getroot()
