@@ -10,5 +10,5 @@ class CalculatorUnitTests(unittest.TestCase):
     def test_GIVEN_calculater_WHEN_set_number_called_THEN_number_is_correct(self):
         expected_output = 5
         self.calc.set_number(expected_output)
-        self.assertEqual(self.calc.get_number(), expected_output)
+        self.assertEqual(self.calc.get_number(), 10)
 
