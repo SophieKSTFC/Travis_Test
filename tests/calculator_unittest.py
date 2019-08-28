@@ -1,6 +1,6 @@
 import unittest
 import sys
-sys.path.append('../')
+sys.path.append('../src/')
 from calculator import Calculator
 
 class CalculatorUnitTests(unittest.TestCase):
