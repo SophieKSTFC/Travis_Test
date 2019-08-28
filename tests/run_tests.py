@@ -1,12 +1,15 @@
 import unittest
 import sys
+import xmlrunner
 
 
 def run_all_tests():
 
     suite = unittest.TestLoader().discover(".", pattern="*test.py")
-    result = unittest.TextTestRunner(verbosity=2).run(suite)
-    return result.wasSuccessful()
+
+    result = xmlrunner.XMLTestRunner(output="test-reports").run(suite).wasSuccessful()
+    
+    return result
 
 
 def main():
